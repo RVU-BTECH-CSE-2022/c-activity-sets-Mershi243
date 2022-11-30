@@ -1,6 +1,6 @@
 # Set 1
 
-1. Write a C program to print your name.
+1. write a c program to print your name.
 
 ---
 
@@ -33,7 +33,7 @@ The sum of 1 and 2 is 3
 
 ---
 
-4. Write a C program to add two numbers using **pass by reference**
+4. Write a C program to add two numbers using **pass by reference**zss
 
 ***Function Declarations***
 
@@ -182,9 +182,6 @@ Square root of 49.0 is 7.0
 ```
 
 ---
-
-10. Write a C program to compare two strings, character by character.
-
 > For example, `Hello` should be equal to `Hello`, but not equal to `hello`.
 
 > `Hello` will be lesser than `Hellw` (alphabetical order).
