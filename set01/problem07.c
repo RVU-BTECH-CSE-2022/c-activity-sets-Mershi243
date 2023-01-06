@@ -1,41 +1,36 @@
 #include<stdio.h>
-int input();
-int compare(int a, int b, int c);
-void output(int a, int b, int c, int largest);
+
+int input_n();
+int sum_n_nos(int n);
+void output(int n, int sum);
+
 int main()
 {
-   int a,b,c,largest;
-  a=input();
-  b=input();
-  c=input();
-  largest=compare(a,b,c);
-  output( a,  b,  c,  largest); 
+  int n;
+  n=input_n();
+  int sum;
+  sum=sum_n_nos(n);
+  output(n,sum);
+  return 0;
 }
-int input()
+
+int input_n() 
 {
- int n;
-  printf("Enter the number:");
+  int n;
+  printf("Enter the number:\n");
   scanf("%d",&n);
-  return n;
 }
-int compare(int a, int b, int c)
+
+int sum_n_nos(int n)
 {
- int largest=0;
-  if ((a>b)&&(a>c))
+  int sum;
+  for(int i=1; i<=n;i++)
   {
-    largest=a;
+    sum+=i
   }
-  else if ((b>a)&&(b>c))
-  {
-    largest=b;
-  }
-  else
-  {
-    largest=c;
-  }
-   return largest; 
-  }
-void output(int a, int b, int c, int largest)
+  return sum;
+}
+void output(int n, int sum)
 {
-  printf("the largest of %d,%d and %d is %d",a,b,c,largest);
+  printf("The sum %d natural number is %d",n,sum);
 }
